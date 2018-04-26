@@ -1,0 +1,160 @@
+p {
+	font-family: roboto;
+}
+
+body {
+	display: grid;
+	grid-template:
+		"hed" 1fr
+		"cnt" .5fr
+		/1fr;
+
+}
+
+header {
+	grid-area: hed;
+	display: grid;
+	grid-template:
+		"nav" 1fr
+		"hro" 5fr
+		/1fr;
+
+}
+
+/* nav */
+
+.toggle-nav {
+	display: none;
+	text-align: center;
+
+}
+
+nav {
+	display: grid;
+	grid-template:
+		"log nav" 1fr
+		/1fr 2fr;
+
+	align-items: center;
+	grid-area: nav;
+	background-color: black;
+	/*background-image: url(../images/roberts_bg1_29.gif);*/
+	background-size: cover;
+
+}
+
+#logo {
+	height: 100%;
+	max-width: 100%;
+	grid-area: log;
+}
+
+
+.flex-nav ul {
+	grid-area: nav;
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+
+.flex-nav li {
+	flex: 3;
+	display: flex;
+	justify-content: center;
+	padding: .5rem 0rem .5rem 0orem;
+	font-family: roboto;
+	
+}
+
+.flex-nav .social {
+	flex: 1;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+@media (max-width: 1000px) {
+	.flex-nav ul {
+		flex-wrap: wrap;
+	}
+	.flex-nav li {
+		/*max-width: 50%;*/
+		flex:1 1 50%;	
+	}
+
+	.social {
+		flex:1 1 33.333%;
+	}
+
+}
+
+@media (max-width: 500px) {
+	.toggle-nav {
+		display: block;
+	}
+
+	.flex-nav li {
+		flex-basis: 100%;
+	}
+
+	.flex-nav ul {
+		display: none;
+	}
+
+	.flex-nav ul.open {
+		display: flex;
+	}
+
+
+}
+
+.hero {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-area: hro;
+	height: auto;
+	background-image: url(../images/carbon.jpg);
+	background-size: cover;
+	background-position: center center;
+	align-items: center;
+
+}
+
+h1 {
+	grid-column: 2;
+	font-family: roboto;
+	font-size: 32px;
+	font-weight: bold;
+	font-style: italic;
+	color: white;
+	text-shadow: 0 0 4px black;
+}
+
+
+main {
+	grid-area: cnt;
+	display: grid;
+	grid-template-columns: 
+	grid-template-rows:
+
+.card {
+	display: grid;
+	height: 100px;
+	grid-template: 2fr 1fr/1fr;
+
+.card_image {
+	grid-row: 1;
+	height: 100px;
+	background-color: orange;
+}
+
+.card_text {
+	grid-row: 2;
+	background-color: red;
+}
+
+
