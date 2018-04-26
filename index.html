@@ -6,37 +6,60 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 
 </head>
 <body>
 	<header>
+		<nav class="micro-nav">
+			<ul>
+				<li class="social" class="icon">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</li>
+				<li class="social" class="icon">
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</li>
+			</ul>
+
+			<ul class="micro-items">
+				<li class="icon" class="micro-item">
+					<i class="fas fa-clock"></i>
+					604-123-4567
+				</li>
+				<li class="icon" class="micro-item">
+					<i class="fas fa-clock"></i>
+					email
+				</li>
+				<li class="icon" class="micro-item">
+					<i class="fas fa-clock"></i>
+					time
+				</li>
+			</ul>
+			
+		</nav>
 		<nav class="flex-nav">
 			<img id="logo" src="images/roberts-logo.jpg" alt="">
 			<a href="#" class="toggle-nav">MENU</a>	
 				<ul> 
-					<li><a href="#">Windsurfing Boards</a></li>
-					<li><a href="#">Bike Repair</a></li>
-					<li><a href="#">Sailing Solutions and Repairs</a></li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-					<li class="social"><a href="#">#</a></li>
-					<li class="social"><a href="#">#</a></li>
-					<li class="social"><a href="#">#</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">SERVICES</a></li>
+					<li><a href="#">GALLERY</a></li>
+					<li><a id="contact" href="#">CONTACT</a></li>
+					
 				
 				</ul>
 		</nav>			
-		<div class="hero">	
-			<h1>Custom built carbon fiber boards and many other things. Also repairs as well. One stop shop for all custom carbon fiber needs.</h1>
+		<div class="hero">
+			<h1>CARBON FIBER </h1>
+			<div class="hero_wrap"></div>
 		</div>
 	</header>	
 	<main>
-		<div class="card">
-			<div class="card_image"></div>
-			<div class="card_text">
-				<p></p>
-			</div>
+		<div id="blurb">
+			<h2>We do all kinds of stuff been doing it for a long time well experienced. we are masters of wind surf boards and repairing and building all sorts of things. Talk to us to do make some custom things. If you can think it we can make it. We will build it right and build it to last.</h2>
 		</div>
 		<div class="card">
 			<div class="card_image"></div>
@@ -54,12 +77,18 @@
 			<div class="card_image"></div>
 			<div class="card_text">
 				<p></p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card_image"></div>
+			<div class="card_text">
+				<p><i class="fas fa-clock"></i></p>
 			</div>
 		</div>
 
 	</main>
 </body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> -->
 	</script>
 	<script>
 		$(function() {
