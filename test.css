@@ -1,0 +1,17 @@
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.item {
+	grid-column: 1;
+	background-color: yellow;
+}
+
+.item2 {
+	grid-column: 2;
+	background-color: red;
+}
+
+.nested {
+	
+}

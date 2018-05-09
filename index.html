@@ -1,95 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Roberts Composites</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	<head>
+		<meta charset="UTF-8">
+		<title>Roberts Composites</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 
-</head>
-<body>
-	<header>
-		<nav class="micro-nav">
-			<ul>
-				<li class="social" class="icon">
-					<a href="#"><i class="fab fa-instagram"></i></a>
-				</li>
-				<li class="social" class="icon">
-					<a href="#"><i class="fab fa-instagram"></i></a>
-				</li>
-			</ul>
+	</head>
 
-			<ul class="micro-items">
-				<li class="icon" class="micro-item">
-					<i class="fas fa-clock"></i>
-					604-123-4567
-				</li>
-				<li class="icon" class="micro-item">
-					<i class="fas fa-clock"></i>
-					email
-				</li>
-				<li class="icon" class="micro-item">
-					<i class="fas fa-clock"></i>
-					time
-				</li>
-			</ul>
-			
-		</nav>
-		<nav class="flex-nav">
-			<img id="logo" src="images/roberts-logo.jpg" alt="">
-			<a href="#" class="toggle-nav">MENU</a>	
-				<ul> 
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">SERVICES</a></li>
-					<li><a href="#">GALLERY</a></li>
-					<li><a id="contact" href="#">CONTACT</a></li>
+	<body class="l-body">
+		<header class="l-header">
+			<div class="l-bars">
+				<nav class="l-foldingContactBar foldingContactBar">
+					<div class="l-foldingContactBar__leftWidgets">
+							<a href="#" class="l-socialIcon socialIcon"><span class="fab fa-instagram"></span></a>
+							<a href="#" class="l-socialIcon socialIcon"><span class="fab fa-instagram"></span></a>
+							<a href="#" class="l-socialIcon socialIcon"><span class="fab fa-instagram"></span></a>
+					</div>
+					<div class="l-foldingContactBar__rightWidgets">
+						<a href="#" class="foldingContactBar__contactItem">
+							<span class="fas fa-clock"></span>604-123-4567
+						</a>
+						<a href="#" class="foldingContactBar__contactItem">
+							<span class="fas fa-clock"></span>604-123-4567
+						</a>
+						<a href="#" class="foldingContactBar__contactItem">
+							<span class="fas fa-clock"></span>604-123-4567
+						</a>
+							
+					</div>
+				</nav>
+				<nav class="l-nav nav">
+					<img class="logo" src="images/roberts-logo.jpg" alt="Roberts Logo">
+					<!-- <a href="#" class="toggle-nav">MENU</a>	 -->
+					<ul class="l-nav__buttonList"> 
+						<li><a class="nav__button" href="#">ABOUT</a></li>
+						<li><a class="nav__button" href="#">SERVICES</a></li>
+						<li><a class="nav__button" href="#">GALLERY</a></li>
+						<li><a class="nav__button nav__contactButton" href="#">CONTACT</a></li>
+					</ul>
+			</div>
 					
-				
-				</ul>
-		</nav>			
-		<div class="hero">
-			<h1>CARBON FIBER </h1>
-			<div class="hero_wrap"></div>
-		</div>
-	</header>	
-	<main>
-		<div id="blurb">
-			<h2>We do all kinds of stuff been doing it for a long time well experienced. we are masters of wind surf boards and repairing and building all sorts of things. Talk to us to do make some custom things. If you can think it we can make it. We will build it right and build it to last.</h2>
-		</div>
-		<div class="card">
-			<div class="card_image"></div>
-			<div class="card_text">
-				<p></p>
+			<div class="l-hero hero">
+				<div class="hero__overlay"></div>
+				<h1>CARBON FIBER</h1>
 			</div>
-		</div>
-		<div class="card">
-			<div class="card_image"></div>
-			<div class="card_text">
-				<p></p>
-			</div>
-		</div>
-		<div class="card">
-			<div class="card_image"></div>
-			<div class="card_text">
-				<p></p>
-			</div>
-		</div>
-		<div class="card">
-			<div class="card_image"></div>
-			<div class="card_text">
-				<p><i class="fas fa-clock"></i></p>
-			</div>
-		</div>
+		</header>	
+		<main class="l-main">
+			<div class="l-blurb blurb">
+				<h2>We do all kinds of stuff and have been doing it for a long time. Well experienced. We are masters of wind surf boards and repairing and building all sorts of things. Talk to us to do make some custom things. If you can think it we can make it. We will build it right and build it to last.</h2>
+				<h2>OUR SERVICES</h2>
 
-	</main>
-</body>
+			</div>
+			<div class="l-cardSection">
+				<div class="l-card card">
+					<div class="l-card__image card__image  card__windsurfCardImage"></div>
+					<div class="l-card__text card__text">
+						<p>Windsurfing boards</p>
+					</div>
+					<div class="card__overlay"></div>
+				</div>
+			<div class="l-card card">
+				<div class="l-card__image card__image"></div>
+				<div class="l-card__text">
+					<p>Bike Repair</p>
+				</div>
+			</div>
+			<div class="l-card card">
+				<div class="l-card__image card__image"></div>
+				<div class="l-card__text">
+					<p></p>
+				</div>
+			</div>
+			<div class="l-card card">
+				<div class="l-card__image card__image"></div>
+				<div class="l-card__text">
+				</div>
+			</div>
+
+			</div>
+			
+		</main>
+	</body>
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> -->
-	</script>
+	<!-- </script>
 	<script>
 		$(function() {
 			$('.toggle-nav').on('click',function() {
@@ -97,5 +96,5 @@
 			})
 		})	
 
-	</script>
+	</script> -->
 </html>
