@@ -82,9 +82,9 @@ h2 {
 	display: grid;
 
 	grid-template:
-		"... ttl ttl ..." auto
-		"blb blb blb blb" auto
-		"cd1 cd2 cd3 cd4" auto
+		"... ttl ttl ..." 75px
+		"blb blb blb blb" 100px
+		"cd1 cd2 cd3 cd4" 300px
 		/auto auto auto auto;
 
 	/*background-color: #262626;*/
@@ -308,6 +308,11 @@ h2 {
 
 .cardSection__blurb {
 	grid-area: blb;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	
 
 
@@ -316,7 +321,6 @@ h2 {
 .card {
 
 	display: grid;
-	grid-row: 2;
 	position: relative;
 
 	grid-template-rows: .1fr 2.5fr .1fr;
