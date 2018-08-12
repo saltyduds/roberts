@@ -25,11 +25,27 @@ h1 {
 }
 
 h2 {
+	font-size: 2.3rem;
+	font-family: roboto;
+
+
+}
+
+h3 {
 	font-size: 1.3rem;
 	grid-column: 2;
 	font-family: roboto;
 
-	
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 
@@ -45,7 +61,7 @@ h2 {
 		"hed" .5fr
 		"cnt" 1fr
 		/1fr;
-		background-color: #EEEEEE;
+	background-color: #EEEEEE;
 }
 
 .l-header {
@@ -84,12 +100,17 @@ h2 {
 	grid-template:
 		"... ttl ttl ..." 75px
 		"blb blb blb blb" 100px
-		"cd1 cd2 cd3 cd4" 300px
-		/auto auto auto auto;
-
-	/*background-color: #262626;*/
+		"cd1 cd2 cd3 cd4" 200px
+		
+		/1fr 1fr 1fr 1fr;
+	
+	
+	padding-top: 3rem;
+	padding-bottom: 10rem;
+	background-color: #CCCCCC;
 	/*background-image: url(../images/carbon-fiber-png-1796267-900x562.png)*/
 }
+
 
 .l-cardSection__cd1 {
 	grid-area: cd1;
@@ -268,6 +289,8 @@ h2 {
 	align-items: center;
 	text-align: center;
 	position: relative;
+	justify-content: end;
+
 
 
 	background-image: url(../images/windsurf1.jpg);
@@ -288,7 +311,7 @@ h2 {
 
 
 
-.blurb {
+.l-blurb {
 	grid-area: blb;
 
 	display: grid;
@@ -298,12 +321,21 @@ h2 {
 	margin: 15px;
 }
 
+.blurb__text {
+	grid-column: 2;
+} 
+
 .cardSection__title {
 	grid-area: ttl;
 
 	display: grid;
 	justify-content: center;
 	align-items: center;
+
+	font-weight: bold;
+	/*text-decoration: underline;*/
+	color: #ED3B30;
+
 }
 
 .cardSection__blurb {
@@ -318,7 +350,7 @@ h2 {
 
 }
 
-.card {
+/*.card {
 
 	display: grid;
 	position: relative;
@@ -333,7 +365,7 @@ h2 {
 	/*background-color: white;*/
 	/*background-image: url(../images/carbon-fiber-png-1796267-900x562.png);*/
 
-}
+}*/
 
 
 
@@ -376,8 +408,9 @@ h2 {
 		"txt" 1fr
 		/1fr;
 
-	background-color: white;
+	/*background-color: white;*/
 	border-radius: .5rem;
+	/*background-color: #EEEEEE;*/
 
     z-index: 1;
 }
@@ -391,7 +424,6 @@ h2 {
 
 	border-top-left-radius: .5rem;
 	border-top-right-radius: .5rem;
-	/*border: solid 2.1px #252528;*/
 	/*border-radius: 2%;*/
 	/*margin: 1rem 1rem .5rem 1rem;*/
 }
@@ -405,9 +437,13 @@ h2 {
 	align-items: center;
 	justify-content: center;
 
+	color: #EEEEEE;
+
+	/*background-color: #262626;*/
+
 	font-family: roboto;
 
-	/*font-size: 1.3rem;*/
+	font-size: 1.3rem;
 	z-index: 2;
 }
 
@@ -417,4 +453,27 @@ h2 {
 	background-image: url(../images/fp1.jpg);
 	/*background-position: center center;	*/
 }
+
+.card__bikeCardImage {
+	grid-area: img;
+
+	background-image: url(../images/fp2.jpg);
+	/*background-position: center center;	*/
+}
+
+.card__sailCardImage {
+	grid-area: img;
+
+	background-image: url(../images/repair.jpg);
+	/*background-position: center center;	*/
+}
+
+.card__adaptiveCardImage {
+	grid-area: img;
+
+	background-image: url(../images/chair1.jpg);
+	/*background-position: center center;	*/
+}
+
+
 
