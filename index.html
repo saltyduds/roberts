@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+		<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script> -->
 
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
@@ -29,38 +29,74 @@
 			<div class="l-bars">
 				<nav class="foldingContactBar">
 					<div class="l-foldingContactBar__leftWidgets">
-							<a href="#" class="socialIcon"><span class="fab fa-instagram"></span></a>
-							<a href="#" class="socialIcon"><span class="fab fa-instagram"></span></a>
-							<a href="#" class="socialIcon"><span class="fab fa-instagram"></span></a>
+						<a href="#" class="socialIcon"><span class="fab fa-instagram"></span></a>
+						<a href="#" class="socialIcon"><span class="fab fa-instagram"></span></a>
+						<a href="#" class="socialIcon"><span class="fab fa-instagram"></span></a>
 					</div>
 					<div class="l-foldingContactBar__rightWidgets">
 						<a href="#" class="foldingContactBar__contactItem">
-							<span class="fas fa-clock"></span>604-123-4567
+						  <span class="fas fa-clock"></span>604-123-4567
 						</a>
 						<a href="#" class="foldingContactBar__contactItem">
-							<span class="fas fa-clock"></span>604-123-4567
+						  <span class="fas fa-clock"></span>604-123-4567
 						</a>
 						<a href="#" class="foldingContactBar__contactItem">
-							<span class="fas fa-clock"></span>604-123-4567
+						  <span class="fas fa-clock"></span>604-123-4567
 						</a>
-							
+
 					</div>
 				</nav>
-				<nav class="nav">
-					<img class="logo" src="images/roberts-logo.jpg" alt="Roberts Logo">
-					<!-- <a href="#" class="toggle-nav">MENU</a>	 -->
-					<ul class="l-nav__buttonList"> 
-						<li><a class="nav__button" href="#">ABOUT</a></li>
-						<li><a class="nav__button" href="#">SERVICES</a></li>
-						<li><a class="nav__button" href="#">GALLERY</a></li>
-						<li><a class="nav__button nav__contactButton" href="#">CONTACT</a></li>
-					</ul>
+
+        <nav class="nav navbar navbar-expand-sm navbar-dark">
+          <div class="logoWrapper">
+            <!-- <a href="#" class="navbar-brand">
+                 </a> -->
+            <img alt="" class="logo" src="./images/roberts-logo.jpg"/>
+            <img alt="" class="logoSmall" src="./images/logosmall"/>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">ABOUT</a>
+              <a class="nav-item nav-link" href="#">SERVICES</a>
+              <a class="nav-item nav-link" href="#">GALLERY</a>
+              <a class="nav-item nav-link" href="#">CONTACT</a>
+            </div>
+          </div>  
         </nav>
+
+
+
+				<!-- <nav class="nav">
+					   <img class="logo" src="images/roberts-logo.jpg" alt="Roberts Logo">
+					   <ul class="l-nav__buttonList"> 
+						 <li><a class="nav__button" href="#">ABOUT</a></li>
+						 <li><a class="nav__button" href="#">SERVICES</a></li>
+						 <li><a class="nav__button" href="#">GALLERY</a></li>
+						 <li><a class="nav__button nav__contactButton" href="#">CONTACT</a></li>
+					   </ul>
+             </nav> -->
+
+
 			</div>
 
-			<div class="hero">
-				<div class="hero__overlay"></div>
-				<h1>We know the endless possibilities offered by 'carbon fiber done right'.</h1>
+		  <div class="hero">
+        <div class="l-carousel carousel slide carousel-fade" deata-ride="carousel" data-pause="false" data-interval="2700">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img alt="" src="./images/pic_headers/bike.jpg">
+            </div>
+            <div class="carousel-item">
+              <!-- <img alt="" src="./images/pic_headers/carbon.jpg">
+      </div>
+      </div> 
+      </div>
+      </div> -->
+				<!-- <div class="hero__overlay"></div> -->
 			</div>
 		</header>
 		<main class="l-main">
@@ -70,72 +106,62 @@
 			<div class="l-cardSection">
 				<h2 class="cardSection__title">OUR SERVICES</h2>
 				<p class="cardSection__blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quidem dolor doloremque cumque ex voluptates, nam veniam illum saepe odit debitis ad laudantium obcaecati iusto suscipit id iste. Voluptates quam excepturi animi, at officia. Consectetur eius animi atque maiores! Optio.</p>
-				<div class="card l-cardSection__cd1">
-					<div class="card__border">
-						<div class="card__overlay"></div>	
-					</div>
-					<div class="card__content">
-						<div class="card__image  card__windsurfCardImage">
-							<div class="card__overlay"></div>
-						</div>
-						<div class="card__text">
-							<p>Windsurfing boards</p>
-						</div>
-					</div>
-				</div>
-				<div class="card l-cardSection__cd2">
-					<div class="card__border">
-						<div class="card__overlay"></div>	
-					</div>
-					<div class="card__content">
-						<div class="card__image  card__bikeCardImage">
-							<div class="card__overlay"></div>
-						</div>
-						<div class="card__text">
-							<p>Bike Repair</p>
-						</div>
-					</div>
-				</div>
-				<div class="card l-cardSection__cd3">
-					<div class="card__border">
-						<div class="card__overlay"></div>	
-					</div>
-					<div class="card__content">
-						<div class="card__image  card__sailCardImage">
-							<div class="card__overlay"></div>
-						</div>
-						<div class="card__text">
-							<p>Sailing Solutions and Repairs</p>
-						</div>
-					</div>
-				</div>
-				<div class="card l-cardSection__cd4">
-					<div class="card__border">
-						<div class="card__overlay"></div>	
-					</div>
-					<div class="card__content">
-						<div class="card__image  card__adaptiveCardImage">
-							<div class="card__overlay"></div>
-						</div>
-						<div class="card__text">
-							<p>Adaptive Sport</p>
-						</div>
-					</div>
-				</div>
+				<!-- <div class="card l-cardSection__cd1">
+					   <div class="card__border">
+						 <div class="card__overlay"></div>	
+					   </div>
+					   <div class="card__content">
+						 <div class="card__image  card__windsurfCardImage">
+						 <div class="card__overlay"></div>
+						 </div>
+						 <div class="card__text">
+						 <p>Windsurfing boards</p>
+						 </div>
+					   </div>
+				     </div> -->
+				<!-- <div class="card l-cardSection__cd2">
+					   <div class="card__border">
+						 <div class="card__overlay"></div>	
+					   </div>
+					   <div class="card__content">
+						 <div class="card__image  card__bikeCardImage">
+						 <div class="card__overlay"></div>
+						 </div>
+						 <div class="card__text">
+						 <p>Bike Repair</p>
+						 </div>
+					   </div>
+				     </div> -->
+				<!-- <div class="card l-cardSection__cd3">
+					   <div class="card__border">
+						 <div class="card__overlay"></div>	
+					   </div>
+					   <div class="card__content">
+						 <div class="card__image  card__sailCardImage">
+						 <div class="card__overlay"></div>
+						 </div>
+						 <div class="card__text">
+						 <p>Sailing Solutions and Repairs</p>
+						 </div>
+					   </div>
+				     </div> -->
+				<!-- <div class="card l-cardSection__cd4">
+					   <div class="card__border">
+						 <div class="card__overlay"></div>	
+					   </div>
+					   <div class="card__content">
+						 <div class="card__image  card__adaptiveCardImage">
+						 <div class="card__overlay"></div>
+						 </div>
+						 <div class="card__text">
+						 <p>Adaptive Sport</p>
+						 </div>
+					   </div>
+				     </div> -->
 
 			</div>
 
 
 		</main>
 	</body>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> -->
-	<!-- </script>
-	<script>
-		$(function() {
-			$('.toggle-nav').on('click',function() {
-				$('.flex-nav ul').toggleClass('open');
-			})
-		})	
-
-	</script> -->
 </html>
