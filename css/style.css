@@ -13,32 +13,37 @@ a{
 	font-family: roboto;
 }
 
-/* h1 { */
-/* 	font-family: roboto; */
-/* 	font-size: 2rem; */
-/* 	font-weight: bold; */
-/* 	/\*font-style: italic;*\/ */
-/* 	color: white; */
-/* 	text-shadow: 0px 0px 7px black; */
-/* 	grid-column: 2/3; */
-/* 	z-index: 1; */
-/* } */
+h1 {
+	font-family: roboto;
+	font-size: 2rem;
+	font-weight: bold;
+	/*font-style: italic;*/
+	color: white;
+	text-shadow: 0px 0px 7px black;
+	grid-column: 2/3;
+	z-index: 1;
+}
 
-/* h2 { */
-/* 	font-size: 2.3rem; */
-/* 	font-family: roboto; */
-
-
-/* } */
-
-/* h3 { */
-/* 	font-size: 1.3rem; */
-/* 	grid-column: 2; */
-/* 	font-family: roboto; */
-
-/* } */
+h2 {
+	font-size: 2.3rem;
+	font-family: roboto;
 
 
+}
+
+h3 {
+	font-size: 1.3rem;
+	grid-column: 2;
+	font-family: roboto;
+
+}
+
+h5 {
+	  font-size: 1.3rem;
+	  grid-column: 2;
+	  font-family: roboto;
+
+}
 hr {
     display: block;
     height: 1px;
@@ -58,8 +63,8 @@ hr {
 .l-body {
 	display: grid;
 	grid-template:
-		"hed" 0.5fr
-		"cnt" 1fr
+		"hed" auto
+		"cnt" auto
 		/1fr;
 	background-color: #EEEEEE;
 }
@@ -68,8 +73,8 @@ hr {
 	grid-area: hed;
 	display: grid;
 	grid-template:
-		"bars" 1fr
-		"hero" 3.5fr
+		"bars" auto
+		"hero" minmax(200px, auto)
 		/1fr;
 }
 
@@ -77,22 +82,39 @@ hr {
 	grid-area: bars;
 	display: grid;
 	grid-template:
-		"fold" 0.5fr
-		"nav" 1fr
+		"fold" auto
+		"nav"  auto
 		/1fr;
-  position: fixed;
+  /* position: fixed; */
   z-index: 2;
 	/*align-items: center;*/
 }
 
+.l-hero {
+	  grid-area: hero;
+	  display: grid;
+	  grid-template-columns: 1fr 4fr 1fr;
+
+	  /* align-items: center; */
+	  /* text-align: center; */
+	  /* position: relative; */
+	  /* justify-content: end; */
+
+
+
+	  /* background-image: url(../images/windsurf1.jpg); */
+	  /* background-size: cover; */
+	  /* background-position: center center; */
+}
 
 .l-main {
 	grid-area: cnt;
 	display: grid;
 	grid-template:
-		"blb" 1fr
-		"cds" 2fr
+		"blb" auto
+		"cds" auto
 		/1fr
+
 }
 
 .l-cardSection {
@@ -100,13 +122,11 @@ hr {
 	display: grid;
 
 	grid-template:
-		"... ttl ttl ..." 75px
-		"blb blb blb blb" 100px
-		"cd1 cd2 cd3 cd4" 200px
-		
-		/1fr 1fr 1fr 1fr;
-	
-	
+		"ttl" auto
+		"blb" auto
+    "cd" auto
+		/1fr;
+
 	padding-top: 3rem;
 	padding-bottom: 10rem;
 	background-color: #CCCCCC;
@@ -114,26 +134,28 @@ hr {
 }
 
 
-.l-cardSection__cd1 {
-	grid-area: cd1;
+.l-cardsWrapper{
+    display: grid;
+    grid-area: cd;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin: 2rem;
+
 }
 
-.l-cardSection__cd2 {
-	grid-area: cd2;
+.l-cardSection__cd{
+    /* grid-column: span 2; */
 }
 
-.l-cardSection__cd3 {
-	grid-area: cd3;
-	
+/* 1154 874 */
+
+/* @media (max-width: 874 ) */
+@media (max-width: 592px) {
+    .l-cardsWrapper {
+        margin: 2rem 4rem;
+        grid-gap: 50px;
+    }
 }
-
-.l-cardSection__cd4 {
-	grid-area: cd4;
-	
-}
-
-
-
 /* ----------------------- MODULES ---------------------------*/
 
 .foldingContactBar {
@@ -150,8 +172,8 @@ hr {
 	border-bottom-style: solid;
 	border-width: 1px;
 	border-color: #383838;
-	/* background-color: #252525; */
-  background-image: url(../images/crbnfbr.png);
+	background-color: #252525;
+  /* background-image: url(../images/crbnfbr.png); */
 }
 
 .l-foldingContactBar__leftWidgets {
@@ -200,20 +222,24 @@ hr {
 	display: grid;
 	grid-template:
 		"log nav"
-		  /minmax(100px, 1fr) 2fr;
+        
+		  /1fr 2fr;
+  position: sticky-top;
+  /* border-bottom: solid #262626; */
 
-	/* background-color: #262626; */
-  background-image: url(../images/crbnfbr.png);
+	background-color: #262626;
+  /* background-image: url(../images/crbnfbr.png); */
 }
+
 
 .navbar-nav {
     justify-content: space-around;
     width: 100%;
 }
 
-button.navbar-toggler {
+.dropdown-menu {
+    /* z-index: 7; */
 }
-
 /* .nav__buttonList { */
 /*   grid-area: nav; */
 /*   list-style-type: none; */
@@ -224,21 +250,21 @@ button.navbar-toggler {
 /*   width: 100% */
 /* } */
 
-.nav__button {
-	flex: 3;
-	display: flex;
-	justify-content: center;
-	font-family: roboto;
-	padding: 5px 13px;
+/* .nav__button { */
+/* 	flex: 3; */
+/* 	display: flex; */
+/* 	justify-content: center; */
+/* 	font-family: roboto; */
+/* 	padding: 5px 13px; */
 
 
-}
+/* } */
 
-.nav__contactButton {
-	background-color: #ED3B30;
-	border-radius: 3px;
-	padding: 5px 13px;
-}
+/* .nav__contactButton { */
+/* 	background-color: #ED3B30; */
+/* 	border-radius: 3px; */
+/* 	padding: 5px 13px; */
+/* } */
 
 .logoWrapper {
     display: grid;
@@ -248,6 +274,10 @@ button.navbar-toggler {
 
 .navbarBrand {
     justify-content: center;
+}
+
+.carousel-inner l-carousel {
+    height: 100%;
 }
 
 .logo {
@@ -263,44 +293,35 @@ button.navbar-toggler {
     display: none;
 }
 
-.hero {
-	grid-area: hero;
-	display: grid;
-	grid-template-columns: 1fr 4fr 1fr;
-
-	/* align-items: center; */
-	/* text-align: center; */
-	/* position: relative; */
-	/* justify-content: end; */
-
-
-
-	/* background-image: url(../images/windsurf1.jpg); */
-	/* background-size: cover; */
-	/* background-position: center center; */
-}
 
 .l-carousel {
     grid-column: 1/4;
 }
 
-.carousel-item img {
+.carousel-item {
+    height: 100%;
 }
- 
 
-width: 100%;
-max-width:100%;
-max-height:100%;
-.hero__overlay {
-	/*background-color: #636363;*/
-	background-color: #262626;
-	opacity: .6;
-    position: absolute;
-    top: 0;
-    left: 0;
+.carousel-inner {
+   height: 100%;
+}
+
+img {
     width: 100%;
     height: 100%;
 }
+
+/* .hero__overlay { */
+/* 	/\*background-color: #636363;*\/ */
+/* 	background-color: #262626; */
+/*   z-index: 3; */
+/* 	opacity: .6; */
+/*     position: absolute; */
+/*     top: 0; */
+/*     left: 0; */
+/*     width: 100%; */
+/*     height: 100%; */
+/* } */
 
 
 
@@ -339,10 +360,34 @@ max-height:100%;
 	align-items: center;
 	text-align: center;
 	
+  padding: 1.5rem;
 
 
 }
+.card {
+    border-radius: 8px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
 
+.card:hover {
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+        transform: scale(1.02, 1.02);
+
+}
+
+
+
+
+@media (max-width: 575px) {
+    .nav {
+	      grid-template:
+		        "log nav"
+                /5fr 1fr; 
+    }
+    /* button.navbar-toggler { */
+    /*     grid-area: icn; */
+    /* } */
+}
 
 @media (max-width: 512px) {
     .foldingContactBar {
@@ -359,7 +404,8 @@ max-height:100%;
 }
 
 
-@media (max-width: 390px) {
+
+@media (max-width: 340px) {
     .logo {
         display: none;
     }
@@ -367,131 +413,8 @@ max-height:100%;
         display: block;
         grid-column: 2/3;
     }
+    .l-cardsWrapper {
+        margin: 2rem 1rem;
+    }
+
 }
-/*.card {
-
-	display: grid;
-	position: relative;
-
-	grid-template-rows: .1fr 2.5fr .1fr;
-	grid-template-columns: .1fr 2.5fr .1fr;
-	
-	margin: .5rem 1rem;
-	/*position: relative;
-
-
-	/*background-color: white;*/
-	/*background-image: url(../images/carbon-fiber-png-1796267-900x562.png);
-
-}*/
-
-
-
-/* .card__border { */
-/* 	/\*position: relative;*\/ */
-
-/* 	grid-row: 1/-1; */
-/* 	grid-column: 1/-1; */
-
-/* 	/\*border: solid .2px #252525;*\/ */
-/* 	border: 2px inset #252525; */
-/* 	border-radius: .3rem; */
-/* 	box-shadow: .2px .2px 1px #888888; */
-
-/* 	background-image: url(../images/carbon-fiber-png-1796267-900x562.png); */
-	
-/* } */
-
-/* .card__overlay { */
-/* 	/\*grid-area: brd;*\/ */
-
-/* 	background-color: #252525; */
-/* 	opacity: .4; */
-/*     position: absolute; */
-/*     top: 0; */
-/*     left: 0; */
-/*     width: 100%; */
-/*     height: 100%; */
-/*     border-radius: .3rem; */
-/*     /\*z-index: 1;*\/ */
-/* } */
-
-/* .card__content { */
-/* 	grid-row: 2; */
-/* 	grid-column: 2; */
-
-/* 	display: grid; */
-/* 	grid-template: */
-/* 		"img" 1.5fr */
-/* 		"txt" 1fr */
-/* 		/1fr; */
-
-/* 	/\*background-color: white;*\/ */
-/* 	border-radius: .5rem; */
-/* 	/\*background-color: #EEEEEE;*\/ */
-
-/*     z-index: 1; */
-/* } */
-
-/* .card__image { */
-/* 	grid-area: img; */
-/* 	position: relative; */
-
-/* 	background-size: cover; */
-/* 	background-repeat: no-repeat; */
-
-/* 	border-top-left-radius: .5rem; */
-/* 	border-top-right-radius: .5rem; */
-/* 	/\*border-radius: 2%;*\/ */
-/* 	/\*margin: 1rem 1rem .5rem 1rem;*\/ */
-/* } */
-
-
-/* .card__text { */
-/* 	grid-area: txt; */
-
-/* 	display: flex; */
-/* 	text-align: center; */
-/* 	align-items: center; */
-/* 	justify-content: center; */
-
-/* 	color: #EEEEEE; */
-
-/* 	/\*background-color: #262626;*\/ */
-
-/* 	font-family: roboto; */
-
-/* 	font-size: 1.3rem; */
-/* 	z-index: 2; */
-/* } */
-
-/* .card__windsurfCardImage { */
-/* 	grid-area: img; */
-
-/* 	background-image: url(../images/fp1.jpg); */
-/* 	/\*background-position: center center;	*\/ */
-/* } */
-
-/* .card__bikeCardImage { */
-/* 	grid-area: img; */
-
-/* 	background-image: url(../images/fp2.jpg); */
-/* 	/\*background-position: center center;	*\/ */
-/* } */
-
-/* .card__sailCardImage { */
-/* 	grid-area: img; */
-
-/* 	background-image: url(../images/repair.jpg); */
-/* 	/\*background-position: center center;	*\/ */
-/* } */
-
-/* .card__adaptiveCardImage { */
-/* 	grid-area: img; */
-
-/* 	background-image: url(../images/chair1.jpg); */
-/* 	/\*background-position: center center;	*\/ */
-/* } */
-
-
-
